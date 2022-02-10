@@ -1,0 +1,9 @@
+set(BUILD_SHARED_LIBS OFF)
+
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/json")
+
+# set(DEPENDENCIES_HEADERS
+#   # "${CMAKE_CURRENT_SOURCE_DIR}/json/src"
+
+#   PARENT_SCOPE
+# )

@@ -1,0 +1,7 @@
+/usr/app/src/build/CMakeFiles/rebuild_cache.dir
+/usr/app/src/build/CMakeFiles/edit_cache.dir
+/usr/app/src/build/CMakeFiles/simple-blockchain.dir
+/usr/app/src/build/libs/CMakeFiles/rebuild_cache.dir
+/usr/app/src/build/libs/CMakeFiles/edit_cache.dir
+/usr/app/src/build/libs/json/CMakeFiles/edit_cache.dir
+/usr/app/src/build/libs/json/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/block.hpp
+string
+-
+
+/usr/app/src/src/block.cpp
+block.hpp
+-
+openssl/sha.h
+/usr/app/src/src/openssl/sha.h
+string.h
+-
+memory
+-
+
+/usr/app/src/src/main.cpp
+iostream
+-
+block.hpp
+-
+
