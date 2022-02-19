@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/simple-blockchain.dir/src/block.cpp.o CMakeFiles/simple-blockchain.dir/src/main.cpp.o  -o simple-blockchain  -lstdc++fs /usr/lib/x86_64-linux-gnu/libcrypto.a -lpthread -ldl 
+/usr/bin/c++    -rdynamic CMakeFiles/simple-blockchain.dir/src/block.cpp.o CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.o CMakeFiles/simple-blockchain.dir/src/main.cpp.o CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.o  -o simple-blockchain  -lstdc++fs /usr/lib/x86_64-linux-gnu/libcrypto.a -lpthread -ldl 

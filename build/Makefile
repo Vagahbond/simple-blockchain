@@ -150,6 +150,33 @@ src/block.cpp.s:
 	$(MAKE) -f CMakeFiles/simple-blockchain.dir/build.make CMakeFiles/simple-blockchain.dir/src/block.cpp.s
 .PHONY : src/block.cpp.s
 
+src/blockchain.o: src/blockchain.cpp.o
+
+.PHONY : src/blockchain.o
+
+# target to build an object file
+src/blockchain.cpp.o:
+	$(MAKE) -f CMakeFiles/simple-blockchain.dir/build.make CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.o
+.PHONY : src/blockchain.cpp.o
+
+src/blockchain.i: src/blockchain.cpp.i
+
+.PHONY : src/blockchain.i
+
+# target to preprocess a source file
+src/blockchain.cpp.i:
+	$(MAKE) -f CMakeFiles/simple-blockchain.dir/build.make CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.i
+.PHONY : src/blockchain.cpp.i
+
+src/blockchain.s: src/blockchain.cpp.s
+
+.PHONY : src/blockchain.s
+
+# target to generate assembly for a file
+src/blockchain.cpp.s:
+	$(MAKE) -f CMakeFiles/simple-blockchain.dir/build.make CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.s
+.PHONY : src/blockchain.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -177,6 +204,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/simple-blockchain.dir/build.make CMakeFiles/simple-blockchain.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/transaciton.o: src/transaciton.cpp.o
+
+.PHONY : src/transaciton.o
+
+# target to build an object file
+src/transaciton.cpp.o:
+	$(MAKE) -f CMakeFiles/simple-blockchain.dir/build.make CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.o
+.PHONY : src/transaciton.cpp.o
+
+src/transaciton.i: src/transaciton.cpp.i
+
+.PHONY : src/transaciton.i
+
+# target to preprocess a source file
+src/transaciton.cpp.i:
+	$(MAKE) -f CMakeFiles/simple-blockchain.dir/build.make CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.i
+.PHONY : src/transaciton.cpp.i
+
+src/transaciton.s: src/transaciton.cpp.s
+
+.PHONY : src/transaciton.s
+
+# target to generate assembly for a file
+src/transaciton.cpp.s:
+	$(MAKE) -f CMakeFiles/simple-blockchain.dir/build.make CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.s
+.PHONY : src/transaciton.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +243,15 @@ help:
 	@echo "... src/block.o"
 	@echo "... src/block.i"
 	@echo "... src/block.s"
+	@echo "... src/blockchain.o"
+	@echo "... src/blockchain.i"
+	@echo "... src/blockchain.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/transaciton.o"
+	@echo "... src/transaciton.i"
+	@echo "... src/transaciton.s"
 .PHONY : help
 
 

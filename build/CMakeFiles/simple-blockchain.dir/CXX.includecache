@@ -7,6 +7,18 @@
 #IncludeRegexTransform: 
 
 ../include/block.hpp
+memory
+-
+vector
+-
+transaction.hpp
+-
+
+../include/blockchain.hpp
+block.hpp
+-
+
+../include/transaction.hpp
 string
 -
 
@@ -20,9 +32,13 @@ string.h
 memory
 -
 
+/usr/app/src/src/blockchain.cpp
+blockchain.hpp
+-
+
 /usr/app/src/src/main.cpp
 iostream
 -
-block.hpp
+blockchain.hpp
 -
 

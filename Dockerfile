@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 
 RUN apt-get update
-RUN apt-get install openssl libssl-dev cmake git g++ -y
+RUN apt-get -y install openssl libssl-dev cmake g++ 
 
-WORKDIR /usr/app/src
+WORKDIR /usr/app/src/build
 
-CMD ["tail", "-f", "/dev/null"]
+CMD cmake .. && cmake --build .

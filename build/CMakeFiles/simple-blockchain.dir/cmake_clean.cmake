@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/simple-blockchain.dir/src/block.cpp.o"
+  "CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.o"
   "CMakeFiles/simple-blockchain.dir/src/main.cpp.o"
+  "CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.o"
   "simple-blockchain"
   "simple-blockchain.pdb"
 )

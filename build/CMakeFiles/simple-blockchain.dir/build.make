@@ -70,9 +70,22 @@ CMakeFiles/simple-blockchain.dir/src/block.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple-blockchain.dir/src/block.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/app/src/src/block.cpp -o CMakeFiles/simple-blockchain.dir/src/block.cpp.s
 
+CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.o: CMakeFiles/simple-blockchain.dir/flags.make
+CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.o: ../src/blockchain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/app/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.o -c /usr/app/src/src/blockchain.cpp
+
+CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/app/src/src/blockchain.cpp > CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.i
+
+CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/app/src/src/blockchain.cpp -o CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.s
+
 CMakeFiles/simple-blockchain.dir/src/main.cpp.o: CMakeFiles/simple-blockchain.dir/flags.make
 CMakeFiles/simple-blockchain.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/app/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/simple-blockchain.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/app/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/simple-blockchain.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simple-blockchain.dir/src/main.cpp.o -c /usr/app/src/src/main.cpp
 
 CMakeFiles/simple-blockchain.dir/src/main.cpp.i: cmake_force
@@ -83,20 +96,37 @@ CMakeFiles/simple-blockchain.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple-blockchain.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/app/src/src/main.cpp -o CMakeFiles/simple-blockchain.dir/src/main.cpp.s
 
+CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.o: CMakeFiles/simple-blockchain.dir/flags.make
+CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.o: ../src/transaciton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/app/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.o -c /usr/app/src/src/transaciton.cpp
+
+CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/app/src/src/transaciton.cpp > CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.i
+
+CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/app/src/src/transaciton.cpp -o CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.s
+
 # Object files for target simple-blockchain
 simple__blockchain_OBJECTS = \
 "CMakeFiles/simple-blockchain.dir/src/block.cpp.o" \
-"CMakeFiles/simple-blockchain.dir/src/main.cpp.o"
+"CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.o" \
+"CMakeFiles/simple-blockchain.dir/src/main.cpp.o" \
+"CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.o"
 
 # External object files for target simple-blockchain
 simple__blockchain_EXTERNAL_OBJECTS =
 
 simple-blockchain: CMakeFiles/simple-blockchain.dir/src/block.cpp.o
+simple-blockchain: CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.o
 simple-blockchain: CMakeFiles/simple-blockchain.dir/src/main.cpp.o
+simple-blockchain: CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.o
 simple-blockchain: CMakeFiles/simple-blockchain.dir/build.make
 simple-blockchain: /usr/lib/x86_64-linux-gnu/libcrypto.a
 simple-blockchain: CMakeFiles/simple-blockchain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/usr/app/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable simple-blockchain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/usr/app/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable simple-blockchain"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simple-blockchain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

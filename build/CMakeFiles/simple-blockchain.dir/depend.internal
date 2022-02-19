@@ -3,7 +3,18 @@
 
 CMakeFiles/simple-blockchain.dir/src/block.cpp.o
  ../include/block.hpp
+ ../include/transaction.hpp
  /usr/app/src/src/block.cpp
+CMakeFiles/simple-blockchain.dir/src/blockchain.cpp.o
+ ../include/block.hpp
+ ../include/blockchain.hpp
+ ../include/transaction.hpp
+ /usr/app/src/src/blockchain.cpp
 CMakeFiles/simple-blockchain.dir/src/main.cpp.o
  ../include/block.hpp
+ ../include/blockchain.hpp
+ ../include/transaction.hpp
  /usr/app/src/src/main.cpp
+CMakeFiles/simple-blockchain.dir/src/transaciton.cpp.o
+ ../include/transaction.hpp
+ /usr/app/src/src/transaciton.cpp

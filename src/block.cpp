@@ -18,21 +18,25 @@ void sha256(const char *string, char outputBuffer[65])
     outputBuffer[64] = 0;
 }
 
-Block::Block(
-    std::string previousHash,
-    std::string data,
-    std::string timestamp,
-    std::string hash = "0") : hash(hash), previousHash(previousHash), data(data), timestamp(timestamp)
-{
-    this->pow = 0;
-}
+Block::Block() : pow(0)
+{}
 
 std::string Block::calculate_hash()
 {
-    std::string block_data = this->data + this->timestamp + this->pow;
+    std::string block_data = this->transactions_as_string() + this->timestamp + std::to_string(this->pow);
     char hash[65];
     sha256(block_data.c_str(), hash);
     return std::string(hash);
+}
+
+std::string Block::transactions_as_string()
+{
+    std::string data_string = "";
+    for (auto &transaction : this->transactions)
+    {
+        data_string += transaction->to_string();
+    }
+    return data_string;
 }
 
 void Block::mine(size_t difficulty)
@@ -45,7 +49,12 @@ void Block::mine(size_t difficulty)
     }
 }
 
-bool is_hash_valid(size_t difficulty, std::string hash)
+void Block::add_transaction(std::string &from, std::string &to, size_t amount)
+{
+    this->transactions.push_back(std::make_unique<Transaction>(from, to, amount));
+}
+
+bool Block::is_hash_valid(size_t difficulty, std::string hash)
 {
     for (unsigned short i = hash.length() - 1; i < difficulty; --i)
     {
@@ -56,4 +65,9 @@ bool is_hash_valid(size_t difficulty, std::string hash)
     }
 
     return true;
+}
+
+void Block::set_next_block(std::shared_ptr<Block> next_block)
+{
+    this->next_block = std::move(next_block);
 }
